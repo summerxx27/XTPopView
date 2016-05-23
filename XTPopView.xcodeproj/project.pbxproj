@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC81569F1CF29569001AD81F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC81569E1CF29569001AD81F /* main.m */; };
+		BC8156A21CF29569001AD81F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156A11CF29569001AD81F /* AppDelegate.m */; };
+		BC8156A51CF29569001AD81F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156A41CF29569001AD81F /* ViewController.m */; };
+		BC8156A81CF29569001AD81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8156A61CF29569001AD81F /* Main.storyboard */; };
+		BC8156AA1CF29569001AD81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8156A91CF29569001AD81F /* Assets.xcassets */; };
+		BC8156AD1CF29569001AD81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8156AB1CF29569001AD81F /* LaunchScreen.storyboard */; };
+		BC8156B81CF29569001AD81F /* XTPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156B71CF29569001AD81F /* XTPopViewTests.m */; };
+		BC8156C31CF29569001AD81F /* XTPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156C21CF29569001AD81F /* XTPopViewUITests.m */; };
+		BC8156E31CF2E199001AD81F /* 扫一扫.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E21CF2E199001AD81F /* 扫一扫.png */; };
+		BC8156E51CF2E1B8001AD81F /* 添加朋友.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E41CF2E1B8001AD81F /* 添加朋友.png */; };
+		BC8156E71CF2E1FD001AD81F /* 付款.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E61CF2E1FD001AD81F /* 付款.png */; };
+		BC8156E91CF2E258001AD81F /* 发起群聊.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E81CF2E258001AD81F /* 发起群聊.png */; };
+		BC8156EE1CF302DB001AD81F /* XTPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156ED1CF302DB001AD81F /* XTPopView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8156B41CF29569001AD81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8156921CF29569001AD81F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8156991CF29569001AD81F;
+			remoteInfo = XTPopView;
+		};
+		BC8156BF1CF29569001AD81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8156921CF29569001AD81F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8156991CF29569001AD81F;
+			remoteInfo = XTPopView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC81569A1CF29569001AD81F /* XTPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC81569E1CF29569001AD81F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC8156A01CF29569001AD81F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC8156A11CF29569001AD81F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC8156A31CF29569001AD81F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC8156A41CF29569001AD81F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC8156A71CF29569001AD81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC8156A91CF29569001AD81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8156AC1CF29569001AD81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC8156AE1CF29569001AD81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8156B31CF29569001AD81F /* XTPopViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTPopViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8156B71CF29569001AD81F /* XTPopViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTPopViewTests.m; sourceTree = "<group>"; };
+		BC8156B91CF29569001AD81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8156BE1CF29569001AD81F /* XTPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8156C21CF29569001AD81F /* XTPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTPopViewUITests.m; sourceTree = "<group>"; };
+		BC8156C41CF29569001AD81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8156E21CF2E199001AD81F /* 扫一扫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫.png"; sourceTree = "<group>"; };
+		BC8156E41CF2E1B8001AD81F /* 添加朋友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加朋友.png"; sourceTree = "<group>"; };
+		BC8156E61CF2E1FD001AD81F /* 付款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "付款.png"; sourceTree = "<group>"; };
+		BC8156E81CF2E258001AD81F /* 发起群聊.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发起群聊.png"; sourceTree = "<group>"; };
+		BC8156EC1CF302DB001AD81F /* XTPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopView.h; sourceTree = "<group>"; };
+		BC8156ED1CF302DB001AD81F /* XTPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8156971CF29569001AD81F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8156B01CF29569001AD81F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8156BB1CF29569001AD81F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8156911CF29569001AD81F = {
+			isa = PBXGroup;
+			children = (
+				BC81569C1CF29569001AD81F /* XTPopView */,
+				BC8156B61CF29569001AD81F /* XTPopViewTests */,
+				BC8156C11CF29569001AD81F /* XTPopViewUITests */,
+				BC81569B1CF29569001AD81F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC81569B1CF29569001AD81F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC81569A1CF29569001AD81F /* XTPopView.app */,
+				BC8156B31CF29569001AD81F /* XTPopViewTests.xctest */,
+				BC8156BE1CF29569001AD81F /* XTPopViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC81569C1CF29569001AD81F /* XTPopView */ = {
+			isa = PBXGroup;
+			children = (
+				BC8156EB1CF302DB001AD81F /* XTPopView */,
+				BC8156A01CF29569001AD81F /* AppDelegate.h */,
+				BC8156A11CF29569001AD81F /* AppDelegate.m */,
+				BC8156A31CF29569001AD81F /* ViewController.h */,
+				BC8156A41CF29569001AD81F /* ViewController.m */,
+				BC8156A61CF29569001AD81F /* Main.storyboard */,
+				BC8156A91CF29569001AD81F /* Assets.xcassets */,
+				BC8156AB1CF29569001AD81F /* LaunchScreen.storyboard */,
+				BC8156AE1CF29569001AD81F /* Info.plist */,
+				BC81569D1CF29569001AD81F /* Supporting Files */,
+			);
+			path = XTPopView;
+			sourceTree = "<group>";
+		};
+		BC81569D1CF29569001AD81F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC8156E81CF2E258001AD81F /* 发起群聊.png */,
+				BC8156E61CF2E1FD001AD81F /* 付款.png */,
+				BC8156E41CF2E1B8001AD81F /* 添加朋友.png */,
+				BC8156E21CF2E199001AD81F /* 扫一扫.png */,
+				BC81569E1CF29569001AD81F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC8156B61CF29569001AD81F /* XTPopViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8156B71CF29569001AD81F /* XTPopViewTests.m */,
+				BC8156B91CF29569001AD81F /* Info.plist */,
+			);
+			path = XTPopViewTests;
+			sourceTree = "<group>";
+		};
+		BC8156C11CF29569001AD81F /* XTPopViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8156C21CF29569001AD81F /* XTPopViewUITests.m */,
+				BC8156C41CF29569001AD81F /* Info.plist */,
+			);
+			path = XTPopViewUITests;
+			sourceTree = "<group>";
+		};
+		BC8156EB1CF302DB001AD81F /* XTPopView */ = {
+			isa = PBXGroup;
+			children = (
+				BC8156EC1CF302DB001AD81F /* XTPopView.h */,
+				BC8156ED1CF302DB001AD81F /* XTPopView.m */,
+			);
+			path = XTPopView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8156991CF29569001AD81F /* XTPopView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8156C71CF29569001AD81F /* Build configuration list for PBXNativeTarget "XTPopView" */;
+			buildPhases = (
+				BC8156961CF29569001AD81F /* Sources */,
+				BC8156971CF29569001AD81F /* Frameworks */,
+				BC8156981CF29569001AD81F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTPopView;
+			productName = XTPopView;
+			productReference = BC81569A1CF29569001AD81F /* XTPopView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC8156B21CF29569001AD81F /* XTPopViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8156CA1CF29569001AD81F /* Build configuration list for PBXNativeTarget "XTPopViewTests" */;
+			buildPhases = (
+				BC8156AF1CF29569001AD81F /* Sources */,
+				BC8156B01CF29569001AD81F /* Frameworks */,
+				BC8156B11CF29569001AD81F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8156B51CF29569001AD81F /* PBXTargetDependency */,
+			);
+			name = XTPopViewTests;
+			productName = XTPopViewTests;
+			productReference = BC8156B31CF29569001AD81F /* XTPopViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC8156BD1CF29569001AD81F /* XTPopViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8156CD1CF29569001AD81F /* Build configuration list for PBXNativeTarget "XTPopViewUITests" */;
+			buildPhases = (
+				BC8156BA1CF29569001AD81F /* Sources */,
+				BC8156BB1CF29569001AD81F /* Frameworks */,
+				BC8156BC1CF29569001AD81F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8156C01CF29569001AD81F /* PBXTargetDependency */,
+			);
+			name = XTPopViewUITests;
+			productName = XTPopViewUITests;
+			productReference = BC8156BE1CF29569001AD81F /* XTPopViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8156921CF29569001AD81F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "夏天";
+				TargetAttributes = {
+					BC8156991CF29569001AD81F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					BC8156B21CF29569001AD81F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BC8156991CF29569001AD81F;
+					};
+					BC8156BD1CF29569001AD81F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BC8156991CF29569001AD81F;
+					};
+				};
+			};
+			buildConfigurationList = BC8156951CF29569001AD81F /* Build configuration list for PBXProject "XTPopView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8156911CF29569001AD81F;
+			productRefGroup = BC81569B1CF29569001AD81F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8156991CF29569001AD81F /* XTPopView */,
+				BC8156B21CF29569001AD81F /* XTPopViewTests */,
+				BC8156BD1CF29569001AD81F /* XTPopViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8156981CF29569001AD81F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8156AD1CF29569001AD81F /* LaunchScreen.storyboard in Resources */,
+				BC8156E71CF2E1FD001AD81F /* 付款.png in Resources */,
+				BC8156E51CF2E1B8001AD81F /* 添加朋友.png in Resources */,
+				BC8156E31CF2E199001AD81F /* 扫一扫.png in Resources */,
+				BC8156E91CF2E258001AD81F /* 发起群聊.png in Resources */,
+				BC8156AA1CF29569001AD81F /* Assets.xcassets in Resources */,
+				BC8156A81CF29569001AD81F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8156B11CF29569001AD81F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8156BC1CF29569001AD81F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8156961CF29569001AD81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8156EE1CF302DB001AD81F /* XTPopView.m in Sources */,
+				BC8156A51CF29569001AD81F /* ViewController.m in Sources */,
+				BC8156A21CF29569001AD81F /* AppDelegate.m in Sources */,
+				BC81569F1CF29569001AD81F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8156AF1CF29569001AD81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8156B81CF29569001AD81F /* XTPopViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8156BA1CF29569001AD81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8156C31CF29569001AD81F /* XTPopViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8156B51CF29569001AD81F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8156991CF29569001AD81F /* XTPopView */;
+			targetProxy = BC8156B41CF29569001AD81F /* PBXContainerItemProxy */;
+		};
+		BC8156C01CF29569001AD81F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8156991CF29569001AD81F /* XTPopView */;
+			targetProxy = BC8156BF1CF29569001AD81F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC8156A61CF29569001AD81F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8156A71CF29569001AD81F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8156AB1CF29569001AD81F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8156AC1CF29569001AD81F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC8156C51CF29569001AD81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8156C61CF29569001AD81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8156C81CF29569001AD81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XTPopView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTPopView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC8156C91CF29569001AD81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XTPopView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTPopView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC8156CB1CF29569001AD81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTPopViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTPopView.app/XTPopView";
+			};
+			name = Debug;
+		};
+		BC8156CC1CF29569001AD81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTPopViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTPopView.app/XTPopView";
+			};
+			name = Release;
+		};
+		BC8156CE1CF29569001AD81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTPopViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTPopViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTPopView;
+			};
+			name = Debug;
+		};
+		BC8156CF1CF29569001AD81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTPopViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.XTPopViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTPopView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8156951CF29569001AD81F /* Build configuration list for PBXProject "XTPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8156C51CF29569001AD81F /* Debug */,
+				BC8156C61CF29569001AD81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8156C71CF29569001AD81F /* Build configuration list for PBXNativeTarget "XTPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8156C81CF29569001AD81F /* Debug */,
+				BC8156C91CF29569001AD81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC8156CA1CF29569001AD81F /* Build configuration list for PBXNativeTarget "XTPopViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8156CB1CF29569001AD81F /* Debug */,
+				BC8156CC1CF29569001AD81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC8156CD1CF29569001AD81F /* Build configuration list for PBXNativeTarget "XTPopViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8156CE1CF29569001AD81F /* Debug */,
+				BC8156CF1CF29569001AD81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8156921CF29569001AD81F /* Project object */;
+}
