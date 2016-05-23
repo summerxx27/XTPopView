@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
 // font
 @property (nonatomic, assign) CGFloat fontSize;
 // textColor
-@property (nonatomic, assign) UIColor * _Nonnull titleTextColor;
+@property (nonatomic, strong) UIColor * _Nonnull titleTextColor;
 // delegate
 @property (nonatomic, assign) id <selectIndexPathDelegate> _Nonnull delegate;
 // 初始化方法
