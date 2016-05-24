@@ -1,5 +1,6 @@
 ![](http://ww1.sinaimg.cn/large/e6a4355cgw1f46indb1gmj206n07odfq.jpg)
-# XTPopView
+![](http://ww3.sinaimg.cn/large/e6a4355cgw1f46irwh8bij205v07tmx1.jpg)
+# XTPopView(支持十二种样式)
 ```
   // 支持的类型
    /**
@@ -28,8 +29,8 @@
     view1.titleTextColor = [UIColor whiteColor];
     view1.delegate = self;
     [view1 popView];
-    ```
-## 如果要实现点击方法
+```
+如果要实现点击方法
 签订协议
 ```
 @interface ViewController ()<selectIndexPathDelegate>

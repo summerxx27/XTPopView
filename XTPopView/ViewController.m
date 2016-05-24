@@ -50,7 +50,7 @@
      XTTypeOfRightDown,  // 右下
      */
     CGPoint point = CGPointMake(_customBtn.center.x,_customBtn.frame.origin.y + 64);
-    XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:130 Height:40 * 4 Type:XTTypeOfUpRight Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+    XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:130 Height:40 * 4 Type:XTTypeOfRightUp Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
     view1.dataArray = @[@"发起群聊",@"添加朋友", @"扫一扫", @"收付款"];
     view1.images = @[@"发起群聊",@"添加朋友", @"扫一扫", @"付款"];
     view1.fontSize = 13;
