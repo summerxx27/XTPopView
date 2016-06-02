@@ -305,7 +305,7 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.backGoundView.frame.size.width - 5, self.backGoundView.frame.size.height) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.backGoundView.frame.size.width, self.backGoundView.frame.size.height) style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.delegate = self;
@@ -339,6 +339,7 @@
     cell.imageView.image = [UIImage imageNamed:self.images[indexPath.row]];
     cell.textLabel.text = self.dataArray[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:self.fontSize];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.textColor = self.titleTextColor;
     return cell;
 }

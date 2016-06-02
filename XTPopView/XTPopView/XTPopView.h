@@ -57,6 +57,4 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
                          Color:( UIColor * _Nonnull ) color;
 
 - (void)popView;
-
-//- (void)dismiss;
 @end

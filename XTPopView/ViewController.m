@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "XTPopView.h"
-@interface ViewController ()<selectIndexPathDelegate>
+@interface ViewController ()
 @property(strong,readwrite,nonatomic)UIButton *button;
 @property (nonatomic, strong) UIButton *customBtn;
 
@@ -20,13 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
-    _customBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _customBtn.frame = CGRectMake(0, 0, 40, 40);
-    [_customBtn setTitle:@"➕" forState:UIControlStateNormal];
-    [_customBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithCustomView:_customBtn];
-    self.navigationItem.rightBarButtonItem = btn;
     
+    for (int i = 0; i < 6; i ++) {
+            //
+            UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+            btn1.frame = CGRectMake(80, 104 + i * 86, 40, 30);
+            btn1.backgroundColor = [UIColor lightGrayColor];
+            [self.view addSubview:btn1];
+            [btn1 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+            btn1.tag = i;
+    }
 }
 
 - (void)btnClick:(UIButton *)btn
@@ -49,39 +52,75 @@
      XTTypeOfRightCenter,// 右中
      XTTypeOfRightDown,  // 右下
      */
-    CGPoint point = CGPointMake(_customBtn.center.x,_customBtn.frame.origin.y + 64);
-    XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:130 Height:40 * 4 Type:XTTypeOfRightUp Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
-    view1.dataArray = @[@"发起群聊",@"添加朋友", @"扫一扫", @"收付款"];
-    view1.images = @[@"发起群聊",@"添加朋友", @"扫一扫", @"付款"];
-    view1.fontSize = 13;
-    view1.row_height = 40;
-    view1.titleTextColor = [UIColor whiteColor];
-    view1.delegate = self;
-    [view1 popView];
-}
-- (void)selectIndexPathRow:(NSInteger)index
-{
-    switch (index) {
+    switch (btn.tag) {
         case 0:
         {
-            NSLog(@"Click 0 ......");
+            // 如果你的控件是属性, 这里可以进行相对布局
+            CGPoint point = CGPointMake(90 * 1,144);
+            XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfUpLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您"];
+            view1.row_height = 30;
+            view1.titleTextColor = [UIColor yellowColor];
+            [view1 popView];
         }
             break;
         case 1:
         {
-            NSLog(@"Clikc 1 ......");
+            // 如果你的控件是属性, 这里可以进行相对布局
+            CGPoint point = CGPointMake(90,144 + 86 * 1);
+            XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您"];
+            view1.row_height = 30;
+            view1.titleTextColor = [UIColor yellowColor];
+            [view1 popView];
         }
             break;
         case 2:
         {
-            NSLog(@"Clikc 2 ......");
+            // 如果你的控件是属性, 这里可以进行相对布局
+            CGPoint point = CGPointMake(90,144 + 86 * 2);
+            XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfDownLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您"];
+            view1.row_height = 30;
+            view1.titleTextColor = [UIColor yellowColor];
+            [view1 popView];
         }
             break;
         case 3:
         {
-            NSLog(@"Clikc 3 ......");
+            // 如果你的控件是属性, 这里可以进行相对布局
+            CGPoint point = CGPointMake(90,144 + 86 * 3);
+            XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfDownCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您"];
+            view1.row_height = 30;
+            view1.titleTextColor = [UIColor yellowColor];
+            [view1 popView];
         }
             break;
+        case 4:
+        {
+            // 如果你的控件是属性, 这里可以进行相对布局
+            CGPoint point = CGPointMake(90,144 + 86 * 4);
+            XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfLeftUp Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您"];
+            view1.row_height = 30;
+            view1.backGoundView.alpha = 0.5;
+            view1.titleTextColor = [UIColor yellowColor];
+            [view1 popView];
+        }
+            break;
+        case 5:
+        {
+            // 如果你的控件是属性, 这里可以进行相对布局
+            CGPoint point = CGPointMake(90,144 + 86 * 5);
+            XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您"];
+            view1.row_height = 30;
+            view1.titleTextColor = [UIColor yellowColor];
+            [view1 popView];
+        }
+            break;
+
         default:
             break;
     }
