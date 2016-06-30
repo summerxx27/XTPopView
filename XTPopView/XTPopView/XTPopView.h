@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
     XTTypeOfRightDown,  // 右下
     
 };
-@protocol selectIndexPathDelegate <NSObject>
+@protocol SelectIndexPathDelegate <NSObject>
 
 - (void)selectIndexPathRow:(NSInteger )index;
 
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
 // textColor
 @property (nonatomic, strong) UIColor * _Nonnull titleTextColor;
 // delegate
-@property (nonatomic, assign) id <selectIndexPathDelegate> _Nonnull delegate;
+@property (nonatomic, assign) id <SelectIndexPathDelegate> _Nonnull delegate;
 // 初始化方法
 - (instancetype _Nonnull)initWithOrigin:(CGPoint) origin
                          Width:(CGFloat) width
