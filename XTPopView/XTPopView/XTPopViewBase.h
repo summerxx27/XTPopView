@@ -27,28 +27,14 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
     XTTypeOfRightDown,  // 右下
     
 };
-@protocol SelectIndexPathDelegate <NSObject>
 
-- (void)selectIndexPathRow:(NSInteger )index;
 
-@end
-
-@interface XTPopView : UIView
+@interface XTPopViewBase : UIView
 
 // backGoundView
-@property (nonatomic, strong) UIView  * _Nonnull backGoundView;
-// titles
-@property (nonatomic, strong) NSArray * _Nonnull dataArray;
-// images
-@property (nonatomic, strong) NSArray * _Nonnull images;
-// height
-@property (nonatomic, assign) CGFloat row_height;
-// font
-@property (nonatomic, assign) CGFloat fontSize;
-// textColor
-@property (nonatomic, strong) UIColor * _Nonnull titleTextColor;
-// delegate
-@property (nonatomic, assign) id <SelectIndexPathDelegate> _Nonnull delegate;
+@property (nonatomic, strong) UIView            * _Nonnull backGoundView;
+
+
 // 初始化方法
 - (instancetype _Nonnull)initWithOrigin:(CGPoint) origin
                          Width:(CGFloat) width

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC32AD681D2E369700AF5278 /* XTPopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC32AD671D2E369700AF5278 /* XTPopTableView.m */; };
 		BC81569F1CF29569001AD81F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC81569E1CF29569001AD81F /* main.m */; };
 		BC8156A21CF29569001AD81F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156A11CF29569001AD81F /* AppDelegate.m */; };
 		BC8156A51CF29569001AD81F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156A41CF29569001AD81F /* ViewController.m */; };
@@ -19,7 +20,7 @@
 		BC8156E51CF2E1B8001AD81F /* 添加朋友.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E41CF2E1B8001AD81F /* 添加朋友.png */; };
 		BC8156E71CF2E1FD001AD81F /* 付款.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E61CF2E1FD001AD81F /* 付款.png */; };
 		BC8156E91CF2E258001AD81F /* 发起群聊.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E81CF2E258001AD81F /* 发起群聊.png */; };
-		BC8156EE1CF302DB001AD81F /* XTPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156ED1CF302DB001AD81F /* XTPopView.m */; };
+		BC8156EE1CF302DB001AD81F /* XTPopViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156ED1CF302DB001AD81F /* XTPopViewBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC32AD661D2E369700AF5278 /* XTPopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopTableView.h; sourceTree = "<group>"; };
+		BC32AD671D2E369700AF5278 /* XTPopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopTableView.m; sourceTree = "<group>"; };
 		BC81569A1CF29569001AD81F /* XTPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC81569E1CF29569001AD81F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC8156A01CF29569001AD81F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,8 +63,8 @@
 		BC8156E41CF2E1B8001AD81F /* 添加朋友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加朋友.png"; sourceTree = "<group>"; };
 		BC8156E61CF2E1FD001AD81F /* 付款.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "付款.png"; sourceTree = "<group>"; };
 		BC8156E81CF2E258001AD81F /* 发起群聊.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发起群聊.png"; sourceTree = "<group>"; };
-		BC8156EC1CF302DB001AD81F /* XTPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopView.h; sourceTree = "<group>"; };
-		BC8156ED1CF302DB001AD81F /* XTPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopView.m; sourceTree = "<group>"; };
+		BC8156EC1CF302DB001AD81F /* XTPopViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopViewBase.h; sourceTree = "<group>"; };
+		BC8156ED1CF302DB001AD81F /* XTPopViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopViewBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +162,10 @@
 		BC8156EB1CF302DB001AD81F /* XTPopView */ = {
 			isa = PBXGroup;
 			children = (
-				BC8156EC1CF302DB001AD81F /* XTPopView.h */,
-				BC8156ED1CF302DB001AD81F /* XTPopView.m */,
+				BC8156EC1CF302DB001AD81F /* XTPopViewBase.h */,
+				BC8156ED1CF302DB001AD81F /* XTPopViewBase.m */,
+				BC32AD661D2E369700AF5278 /* XTPopTableView.h */,
+				BC32AD671D2E369700AF5278 /* XTPopTableView.m */,
 			);
 			path = XTPopView;
 			sourceTree = "<group>";
@@ -299,7 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8156EE1CF302DB001AD81F /* XTPopView.m in Sources */,
+				BC8156EE1CF302DB001AD81F /* XTPopViewBase.m in Sources */,
+				BC32AD681D2E369700AF5278 /* XTPopTableView.m in Sources */,
 				BC8156A51CF29569001AD81F /* ViewController.m in Sources */,
 				BC8156A21CF29569001AD81F /* AppDelegate.m in Sources */,
 				BC81569F1CF29569001AD81F /* main.m in Sources */,

@@ -6,12 +6,12 @@
 //  Copyright © 2016年 夏天. All rights reserved.
 //
 
-#import "XTPopView.h"
+#import "XTPopViewBase.h"
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define Length 5
 #define Length2 15
-@interface XTPopView ()<UITableViewDelegate, UITableViewDataSource>
+@interface XTPopViewBase ()
 @property (nonatomic, assign) CGPoint origin;
 
 @property (nonatomic, assign) CGFloat height;
@@ -20,11 +20,9 @@
 
 @property (nonatomic, assign) XTDirectionType type;
 
-@property (nonatomic, strong) UITableView *tableView;
-
 @end
 
-@implementation XTPopView
+@implementation XTPopViewBase
 
 - (instancetype)initWithOrigin:(CGPoint)origin Width:(CGFloat)width Height:(CGFloat)height Type:(XTDirectionType)type Color:(UIColor *)color
 {
@@ -43,8 +41,6 @@
         self.backGoundView = [[UIView alloc] initWithFrame:CGRectMake(origin.x, origin.y, width, height)];
         self.backGoundView.backgroundColor = color;
         [self addSubview:self.backGoundView];
-        // 添加tableview
-        [self.backGoundView addSubview:self.tableView];
     }
     return self;
 }
@@ -300,53 +296,5 @@
             [view setHidden:NO];
         }
     }];
-}
-#pragma mark -
-- (UITableView *)tableView
-{
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.backGoundView.frame.size.width, self.backGoundView.frame.size.height) style:UITableViewStylePlain];
-        _tableView.dataSource = self;
-        _tableView.backgroundColor = [UIColor clearColor];
-        _tableView.delegate = self;
-    }
-    return _tableView;
-}
-#pragma mark -
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.dataArray.count;
-}
-#pragma mark -
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (self.row_height == 0) {
-        return 44;
-    }else{
-        return self.row_height;
-    }
-}
-#pragma mark -
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    static NSString *cellIdentifier = @"cellIdentifier2";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-    }
-    cell.backgroundColor = [UIColor clearColor];
-    cell.imageView.image = [UIImage imageNamed:self.images[indexPath.row]];
-    cell.textLabel.text = self.dataArray[indexPath.row];
-    cell.textLabel.font = [UIFont systemFontOfSize:self.fontSize];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.textColor = self.titleTextColor;
-    return cell;
-}
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (self.delegate && [self.delegate respondsToSelector:@selector(selectIndexPathRow:)]) {
-        [self.delegate selectIndexPathRow:indexPath.row];
-    }
 }
 @end
