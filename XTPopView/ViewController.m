@@ -116,6 +116,7 @@
             XTPopView *view1 = [[XTPopView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
+            view1.backGoundView.alpha = 0.5;
             view1.titleTextColor = [UIColor yellowColor];
             [view1 popView];
         }
