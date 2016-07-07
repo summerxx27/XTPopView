@@ -1,4 +1,5 @@
 ![](http://ww4.sinaimg.cn/large/e6a4355cgw1f5lbvn61r1g208w0fqtf8.gif)
+![](http://ww1.sinaimg.cn/large/e6a4355cgw1f5leiopp3fj206w0cbaa4.jpg)
 # XTPopView(支持十二种样式)
 ```
   // 支持的类型
