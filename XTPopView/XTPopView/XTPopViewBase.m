@@ -269,18 +269,15 @@
     NSArray *results = [self.backGoundView subviews];
     
     for (UIView *view in results) {
-        
         [view removeFromSuperview];
-        
     }
     
-    [UIView animateWithDuration:0.25 animations:^{
-        //
+    [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.backGoundView.frame = CGRectMake(self.origin.x, self.origin.y, 0, 0);
     } completion:^(BOOL finished) {
-        //
         [self removeFromSuperview];
     }];
+    
 }
 #pragma mark -
 - (void)startAnimateView_x:(CGFloat) x
@@ -288,9 +285,10 @@
               origin_width:(CGFloat) width
              origin_height:(CGFloat) height
 {
-    [UIView animateWithDuration:0.25 animations:^{
+    
+    [UIView animateWithDuration:0.25 delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.backGoundView.frame = CGRectMake(x, y, width, height);
-    }completion:^(BOOL finished) {
+    } completion:^(BOOL finished) {
         NSArray *results = [self.backGoundView subviews];
         for (UIView *view in results) {
             [view setHidden:NO];
