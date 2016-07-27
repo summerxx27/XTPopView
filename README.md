@@ -99,12 +99,12 @@ break;
 ```
 如果要实现点击方法
 签订协议
-```
+```objectivec
 @interface ViewController ()<SelectIndexPathDelegate>
 
 ```
 实现代理方法
-```
+```objectivec
 - (void)selectIndexPathRow:(NSInteger)index
 ```
 
