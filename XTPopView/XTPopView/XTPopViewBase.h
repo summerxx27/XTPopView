@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define Length 5
+#define Length2 15
 typedef NS_ENUM(NSInteger, XTDirectionType)
 {
     XTTypeOfUpLeft,     // 上左
@@ -34,6 +37,13 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
 // backGoundView
 @property (nonatomic, strong) UIView            * _Nonnull backGoundView;
 
+@property (nonatomic, assign) CGPoint origin;
+
+@property (nonatomic, assign) CGFloat height;
+
+@property (nonatomic, assign) CGFloat width;
+
+@property (nonatomic, assign) XTDirectionType type;
 
 // 初始化方法
 - (instancetype _Nonnull)initWithOrigin:(CGPoint) origin
@@ -43,4 +53,5 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
                          Color:( UIColor * _Nonnull ) color;
 
 - (void)popView;
+
 @end

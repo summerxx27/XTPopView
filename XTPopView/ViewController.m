@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XTPopView.h"
+#import "XTPopNormalView.h"
 @interface ViewController ()<SelectIndexPathDelegate>
 @property(strong,readwrite,nonatomic)UIButton *button;
 @property (nonatomic, strong) UIButton *customBtn;
@@ -57,12 +58,12 @@
         {
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90 * 1,144);
-            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:300 Height:60 Type:XTTypeOfUpLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
-            view1.delegate = self;
-            view1.dataArray = @[@"您有一位朋友找您", @"好的 加我的qq群: 498143780"];
-            view1.row_height = 30;
-            view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
+            XTPopNormalView *view1 = [[XTPopNormalView alloc] initWithOrigin:point Width:300 Height:60 Type:XTTypeOfUpLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            [view1 popViewNormal];
+            [view1.btnDiss setTitle:@"点击我 消失" forState:UIControlStateNormal];
+            [self.view addSubview:view1];
+            
+            
         }
             break;
         case 1:
@@ -73,7 +74,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
+//            [view1 popView];
         }
             break;
         case 2:
@@ -84,7 +85,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
+//            [view1 popView];
         }
             break;
         case 3:
@@ -95,7 +96,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
+//            [view1 popView];
         }
             break;
         case 4:
@@ -106,7 +107,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
+//            [view1 popView];
         }
             break;
         case 5:
@@ -117,13 +118,14 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
+//            [view1 popView];
         }
             break;
 
         default:
             break;
     }
+
 }
 - (void)selectIndexPathRow:(NSInteger )index
 {

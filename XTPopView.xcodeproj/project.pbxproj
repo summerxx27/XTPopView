@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0464E3EB1D48FD8800C637EA /* XTPopNormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464E3EA1D48FD8800C637EA /* XTPopNormalView.m */; };
 		BC32AD681D2E369700AF5278 /* XTPopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC32AD671D2E369700AF5278 /* XTPopTableView.m */; };
-		BC32AD6B1D2E564A00AF5278 /* XTPopLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC32AD6A1D2E564A00AF5278 /* XTPopLabelView.m */; };
 		BC81569F1CF29569001AD81F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC81569E1CF29569001AD81F /* main.m */; };
 		BC8156A21CF29569001AD81F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156A11CF29569001AD81F /* AppDelegate.m */; };
 		BC8156A51CF29569001AD81F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156A41CF29569001AD81F /* ViewController.m */; };
@@ -42,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0464E3E91D48FD8800C637EA /* XTPopNormalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopNormalView.h; sourceTree = "<group>"; };
+		0464E3EA1D48FD8800C637EA /* XTPopNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopNormalView.m; sourceTree = "<group>"; };
 		BC32AD661D2E369700AF5278 /* XTPopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopTableView.h; sourceTree = "<group>"; };
 		BC32AD671D2E369700AF5278 /* XTPopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopTableView.m; sourceTree = "<group>"; };
-		BC32AD691D2E564A00AF5278 /* XTPopLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopLabelView.h; sourceTree = "<group>"; };
-		BC32AD6A1D2E564A00AF5278 /* XTPopLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopLabelView.m; sourceTree = "<group>"; };
 		BC32AD6C1D2E591200AF5278 /* XTPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTPopView.h; sourceTree = "<group>"; };
 		BC81569A1CF29569001AD81F /* XTPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC81569E1CF29569001AD81F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,8 +171,8 @@
 				BC8156ED1CF302DB001AD81F /* XTPopViewBase.m */,
 				BC32AD661D2E369700AF5278 /* XTPopTableView.h */,
 				BC32AD671D2E369700AF5278 /* XTPopTableView.m */,
-				BC32AD691D2E564A00AF5278 /* XTPopLabelView.h */,
-				BC32AD6A1D2E564A00AF5278 /* XTPopLabelView.m */,
+				0464E3E91D48FD8800C637EA /* XTPopNormalView.h */,
+				0464E3EA1D48FD8800C637EA /* XTPopNormalView.m */,
 			);
 			path = XTPopView;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 				BC8156EE1CF302DB001AD81F /* XTPopViewBase.m in Sources */,
 				BC32AD681D2E369700AF5278 /* XTPopTableView.m in Sources */,
 				BC8156A51CF29569001AD81F /* ViewController.m in Sources */,
-				BC32AD6B1D2E564A00AF5278 /* XTPopLabelView.m in Sources */,
+				0464E3EB1D48FD8800C637EA /* XTPopNormalView.m in Sources */,
 				BC8156A21CF29569001AD81F /* AppDelegate.m in Sources */,
 				BC81569F1CF29569001AD81F /* main.m in Sources */,
 			);

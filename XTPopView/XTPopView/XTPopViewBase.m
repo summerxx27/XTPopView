@@ -7,18 +7,9 @@
 //
 
 #import "XTPopViewBase.h"
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
-#define Length 5
-#define Length2 15
+
 @interface XTPopViewBase ()
-@property (nonatomic, assign) CGPoint origin;
 
-@property (nonatomic, assign) CGFloat height;
-
-@property (nonatomic, assign) CGFloat width;
-
-@property (nonatomic, assign) XTDirectionType type;
 
 @end
 
@@ -114,8 +105,11 @@
     for (UIView *view in results) {
         [view setHidden:YES];
     }
+    
     UIWindow *windowView = [UIApplication sharedApplication].keyWindow;
     [windowView addSubview:self];
+    
+        
     switch (self.type) {
         case XTTypeOfUpLeft: {
             {

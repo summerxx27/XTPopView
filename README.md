@@ -1,7 +1,8 @@
 ![](http://ww4.sinaimg.cn/large/e6a4355cgw1f5lbvn61r1g208w0fqtf8.gif)
 ![](http://ww1.sinaimg.cn/large/e6a4355cgw1f5leiopp3fj206w0cbaa4.jpg)
 # XTPopView(支持十二种样式)
-```
+##### 第一种
+```objectivec
 - (void)btnClick:(UIButton *)btn
 {
 
@@ -105,4 +106,14 @@ break;
 实现代理方法
 ```
 - (void)selectIndexPathRow:(NSInteger)index
+```
+
+##### 第二种
+```objectivec
+// 如果你的控件是属性, 这里可以进行相对布局
+CGPoint point = CGPointMake(90 * 1,144);
+XTPopNormalView *view1 = [[XTPopNormalView alloc] initWithOrigin:point Width:300 Height:60 Type:XTTypeOfUpLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+[view1 popViewNormal];
+[view1.btnDiss setTitle:@"点击我 消失" forState:UIControlStateNormal];
+[self.view addSubview:view1];
 ```
