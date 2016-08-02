@@ -27,7 +27,7 @@
     [btn setTitle:@"➕" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     
-    for (int i = 0; i < 6; i ++) {
+    for (int i = 0; i < 5; i ++) {
             //
             UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
             btn1.frame = CGRectMake(80, 104 + i * 86, 40, 30);
@@ -42,6 +42,8 @@
     CGPoint point = CGPointMake(btn.frame.origin.x + btn.frame.size.width / 2, btn.frame.origin.y + btn.frame.size.width + 25);
     XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 * 3 Type:XTTypeOfUpRight Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
     view1.dataArray = @[@"添加好友", @"扫一扫", @"收付款"];
+    // 如果想设置图片
+//    view1.images = @["..."];
     view1.row_height = 30;
     view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
     [view1 popView];
@@ -117,17 +119,6 @@
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90,144 + 86 * 4);
             XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfLeftUp Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
-            view1.dataArray = @[@"您有一位朋友找您"];
-            view1.row_height = 30;
-            view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-            [view1 popView];
-        }
-            break;
-        case 5:
-        {
-            // 如果你的控件是属性, 这里可以进行相对布局
-            CGPoint point = CGPointMake(90,144 + 86 * 5);
-            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfDownCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
