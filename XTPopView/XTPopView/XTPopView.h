@@ -12,4 +12,5 @@
 #import "XTPopViewBase.h"
 #import "XTPopTableView.h"
 #import "XTPopNormalView.h"
+
 #endif /* XTPopView_h */

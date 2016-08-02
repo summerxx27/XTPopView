@@ -40,10 +40,12 @@
         [self removeFromSuperview];
     }];
 }
+#pragma mark - 
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
 }
+#pragma mark -
 - (void)popViewNormal
 {
     switch (self.type) {
@@ -188,7 +190,6 @@
                    origin_height:(CGFloat) height
 {
     self.backGoundView.frame = CGRectMake(x, y, width, height);
-
 }
 #pragma mark -
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

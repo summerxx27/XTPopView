@@ -74,7 +74,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-//            [view1 popView];
+            [view1 popView];
         }
             break;
         case 2:
@@ -85,7 +85,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-//            [view1 popView];
+            [view1 popView];
         }
             break;
         case 3:
@@ -96,7 +96,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-//            [view1 popView];
+            [view1 popView];
         }
             break;
         case 4:
@@ -107,7 +107,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-//            [view1 popView];
+            [view1 popView];
         }
             break;
         case 5:
@@ -118,7 +118,7 @@
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
-//            [view1 popView];
+            [view1 popView];
         }
             break;
 
