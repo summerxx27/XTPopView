@@ -78,6 +78,7 @@
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(selectIndexPathRow:)]) {
         [self.delegate selectIndexPathRow:indexPath.row];
+        [self removeFromSuperview];
     }
 }
 

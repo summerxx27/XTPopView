@@ -85,10 +85,11 @@
         {
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90,144 + 86 * 1);
-            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
-            view1.dataArray = @[@"您有一位朋友找您"];
+            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:200 Height:30 * 2 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            view1.dataArray = @[@"您有一位朋友找您", @"叫summerxx"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
+            view1.delegate = self;
             [view1 popView];
         }
             break;
@@ -96,7 +97,7 @@
         {
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90,144 + 86 * 2);
-            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 Type:XTTypeOfDownLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfDownLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
