@@ -21,6 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 40, 40);
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    [btn setTitle:@"➕" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     
     for (int i = 0; i < 6; i ++) {
             //
@@ -32,7 +37,15 @@
             btn1.tag = i;
     }
 }
-
+- (void)click:(UIButton *)btn
+{
+    CGPoint point = CGPointMake(btn.frame.origin.x + btn.frame.size.width / 2, btn.frame.origin.y + btn.frame.size.width + 25);
+    XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 * 3 Type:XTTypeOfUpRight Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+    view1.dataArray = @[@"添加好友", @"扫一扫", @"收付款"];
+    view1.row_height = 30;
+    view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
+    [view1 popView];
+}
 - (void)btnClick:(UIButton *)btn
 {
     
@@ -58,7 +71,7 @@
         {
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90 * 1,144);
-            XTPopNormalView *view1 = [[XTPopNormalView alloc] initWithOrigin:point Width:300 Height:60 Type:XTTypeOfUpLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            XTPopNormalView *view1 = [[XTPopNormalView alloc] initWithOrigin:point Width:200 Height:60 Type:XTTypeOfUpLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
             [view1 popViewNormal];
             [view1.btnDiss setTitle:@"点击我 消失" forState:UIControlStateNormal];
             [self.view addSubview:view1];
@@ -70,7 +83,7 @@
         {
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90,144 + 86 * 1);
-            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 Type:XTTypeOfUpCenter Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];
@@ -81,7 +94,7 @@
         {
             // 如果你的控件是属性, 这里可以进行相对布局
             CGPoint point = CGPointMake(90,144 + 86 * 2);
-            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:200 Height:30 Type:XTTypeOfDownLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
+            XTPopTableView *view1 = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 Type:XTTypeOfDownLeft Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
             view1.dataArray = @[@"您有一位朋友找您"];
             view1.row_height = 30;
             view1.titleTextColor = [UIColor colorWithRed:0.2669 green:0.765 blue:1.0 alpha:1.0];

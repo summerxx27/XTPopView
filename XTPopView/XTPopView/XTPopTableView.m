@@ -67,6 +67,11 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.textColor = self.titleTextColor;
     
+    if (self.dataArray.count == 1) {
+        self.tableView.bounces = NO;
+        self.tableView.separatorColor = [UIColor clearColor];
+    }
+    
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

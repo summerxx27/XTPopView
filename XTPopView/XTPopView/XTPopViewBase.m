@@ -100,16 +100,9 @@
 #pragma mark - popView
 - (void)popView
 {
-    // 同步显示 子控件(views)和(self)
-    NSArray *results = [self.backGoundView subviews];
-    for (UIView *view in results) {
-        [view setHidden:YES];
-    }
-    
     UIWindow *windowView = [UIApplication sharedApplication].keyWindow;
     [windowView addSubview:self];
-    
-        
+     
     switch (self.type) {
         case XTTypeOfUpLeft: {
             {
@@ -257,21 +250,11 @@
 #pragma mark -
 - (void)dismiss
 {
-    /**
-     *  删除 在backGroundView 上的子控件
-     */
-    NSArray *results = [self.backGoundView subviews];
-    
+    NSArray *results = [self subviews];
     for (UIView *view in results) {
         [view removeFromSuperview];
     }
-    
-    [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        self.backGoundView.frame = CGRectMake(self.origin.x, self.origin.y, 0, 0);
-    } completion:^(BOOL finished) {
-        [self removeFromSuperview];
-    }];
-    
+    [self removeFromSuperview];
 }
 #pragma mark -
 - (void)startAnimateView_x:(CGFloat) x
@@ -279,14 +262,6 @@
               origin_width:(CGFloat) width
              origin_height:(CGFloat) height
 {
-    
-    [UIView animateWithDuration:0.25 delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        self.backGoundView.frame = CGRectMake(x, y, width, height);
-    } completion:^(BOOL finished) {
-        NSArray *results = [self.backGoundView subviews];
-        for (UIView *view in results) {
-            [view setHidden:NO];
-        }
-    }];
+    self.backGoundView.frame = CGRectMake(x, y, width, height);
 }
 @end
