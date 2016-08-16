@@ -21,6 +21,7 @@
     XTTypeOfRightCenter,// 右中
     XTTypeOfRightDown,  // 右下
 */
+
 - (void)click:(UIButton *)btn
 {
     CGPoint point           = CGPointMake(btn.frame.origin.x + btn.frame.size.width / 2, btn.frame.origin.y + btn.frame.size.width + 25);
