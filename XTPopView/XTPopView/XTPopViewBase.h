@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, XTDirectionType)
 @interface XTPopViewBase : UIView
 
 // backGoundView
-@property (nonatomic, strong) UIView            * _Nonnull backGoundView;
+@property (nonatomic, strong) UIView  * _Nonnull backGoundView;
 
 @property (nonatomic, assign) CGPoint origin;
 
