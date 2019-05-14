@@ -10,7 +10,6 @@
 
 @interface XTPopViewBase ()
 
-
 @end
 
 @implementation XTPopViewBase

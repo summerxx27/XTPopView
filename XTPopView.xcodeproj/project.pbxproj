@@ -22,6 +22,7 @@
 		BC8156E71CF2E1FD001AD81F /* 付款.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E61CF2E1FD001AD81F /* 付款.png */; };
 		BC8156E91CF2E258001AD81F /* 发起群聊.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8156E81CF2E258001AD81F /* 发起群聊.png */; };
 		BC8156EE1CF302DB001AD81F /* XTPopViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8156ED1CF302DB001AD81F /* XTPopViewBase.m */; };
+		D54BF21922687B1F00DE545B /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54BF21822687B1F00DE545B /* ExportOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		BC8156E81CF2E258001AD81F /* 发起群聊.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发起群聊.png"; sourceTree = "<group>"; };
 		BC8156EC1CF302DB001AD81F /* XTPopViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPopViewBase.h; sourceTree = "<group>"; };
 		BC8156ED1CF302DB001AD81F /* XTPopViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopViewBase.m; sourceTree = "<group>"; };
+		D54BF21822687B1F00DE545B /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		BC81569C1CF29569001AD81F /* XTPopView */ = {
 			isa = PBXGroup;
 			children = (
+				D54BF21822687B1F00DE545B /* ExportOptions.plist */,
 				BC8156EB1CF302DB001AD81F /* XTPopView */,
 				BC8156A01CF29569001AD81F /* AppDelegate.h */,
 				BC8156A11CF29569001AD81F /* AppDelegate.m */,
@@ -283,6 +286,7 @@
 				BC8156AD1CF29569001AD81F /* LaunchScreen.storyboard in Resources */,
 				BC8156E71CF2E1FD001AD81F /* 付款.png in Resources */,
 				BC8156E51CF2E1B8001AD81F /* 添加朋友.png in Resources */,
+				D54BF21922687B1F00DE545B /* ExportOptions.plist in Resources */,
 				BC8156E31CF2E199001AD81F /* 扫一扫.png in Resources */,
 				BC8156E91CF2E258001AD81F /* 发起群聊.png in Resources */,
 				BC8156AA1CF29569001AD81F /* Assets.xcassets in Resources */,

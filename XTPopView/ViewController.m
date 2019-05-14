@@ -34,7 +34,7 @@
 }
 - (void)click:(UIButton *)btn
 {
-    CGPoint point           = CGPointMake(btn.frame.origin.x + btn.frame.size.width / 2, btn.frame.origin.y + btn.frame.size.width + 25);
+    CGPoint point           = CGPointMake(self.view.frame.size.width - 40, btn.frame.origin.y + btn.frame.size.width + 35);
     XTPopTableView *popView = [[XTPopTableView alloc] initWithOrigin:point Width:150 Height:30 * 3 Type:XTTypeOfUpRight Color:[UIColor colorWithRed:0.2737 green:0.2737 blue:0.2737 alpha:1.0]];
     popView.dataArray       = @[@"添加朋友", @"扫一扫", @"付款"];
     popView.images          = @[@"添加朋友", @"扫一扫", @"付款"];
