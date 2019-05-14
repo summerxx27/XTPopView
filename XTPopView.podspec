@@ -1,4 +1,3 @@
-#  valid spec and to remove all comments including this before submitting the sp
 Pod::Spec.new do |s|
 s.name = 'XTPopView'
 s.version = '1.0.1'
